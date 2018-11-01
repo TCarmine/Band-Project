@@ -4,4 +4,110 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  font-family: Montserrat;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  background: rgba(30, 30, 30, 0.9);
+  color: #b2bfbd;
+  width: 100%;
+  position: fixed;
+  letter-spacing: 0.3vw;
+}
+
+nav li {
+  font-size: 0.8vw;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2vw 0;
+}
+
+nav li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+nav .flex {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+nav .flex h4 {
+  flex-grow: 4;
+  font-family: Montserrat;
+  font-weight: normal;
+  margin: 0;
+  padding-left: 2vw;
+}
+
+nav ul {
+  padding-right: 2vw;
+}
+
+.search {
+  font-size: 1.5vw;
+}
+
+.dropdown {
+  position: fixed;
+  top: 5vw;
+  right: 5vw;
+  background: #edfffc;
+  color: #1e1e1e;
+}
+
+.dropdown li {
+  color: #1e1e1e;
+  text-align: left;
+  margin-left: 1vw;
+}
+
+.dropdown li:hover {
+  background: red;
+  width: 100%;
+}
+
+section {
+  height: 80vw;
+}
+
+img {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+img:nth-of-type(1) {
+  left: 0;
+}
+
+img:nth-of-type(2) {
+  left: 100%;
+}
+
+img:nth-of-type(3) {
+  left: 200%;
+}
+
+.forward, .back {
+  position: absolute;
+  top: 50%;
+  font-size: 3vw;
+  color: white;
+}
+
+.forward {
+  right: 10%;
+}
+
+.back {
+  left: 10%;
 }
