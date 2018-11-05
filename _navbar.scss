@@ -132,7 +132,7 @@ section>img {
   text-transform: uppercase;
   text-align: center;
   font-weight: lighter;
-  padding-top: 2vw;
+  padding-top: 6vw;
 }
 
 .text {
@@ -158,6 +158,7 @@ section>img {
   margin-bottom: 1vw;
   color: rgb(120, 120, 120);
   text-align: center;
+  line-height: 2.5vw;
 }
 
 .active {
@@ -167,4 +168,29 @@ section>img {
 .dark {
   background: rgb(30, 30, 30);
   color: rgb(178, 191, 189);
+}
+
+.months {
+  background: white;
+  color: grey;
+  margin: 0 20vw;
+
+  div {
+    border: 0.4px solid lightgrey;
+    padding: 1vw;
+
+    span {
+      background: red;
+      color: white;
+      border-radius: 2px;
+    }
+
+    .counter {
+      background: grey;
+      color: white;
+      border-radius: 1vw;
+      padding: 0.3vw 0.7vw;
+      margin-left: 47vw;
+    }
+  }
 }

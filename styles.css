@@ -142,7 +142,7 @@ section > img:nth-of-type(3) {
   text-transform: uppercase;
   text-align: center;
   font-weight: lighter;
-  padding-top: 2vw;
+  padding-top: 6vw;
 }
 
 .text {
@@ -168,6 +168,7 @@ section > img:nth-of-type(3) {
   margin-bottom: 1vw;
   color: #787878;
   text-align: center;
+  line-height: 2.5vw;
 }
 
 .active {
@@ -177,4 +178,29 @@ section > img:nth-of-type(3) {
 .dark {
   background: #1e1e1e;
   color: #b2bfbd;
+}
+
+.months {
+  background: white;
+  color: grey;
+  margin: 0 20vw;
+}
+
+.months div {
+  border: 0.4px solid lightgrey;
+  padding: 1vw;
+}
+
+.months div span {
+  background: red;
+  color: white;
+  border-radius: 2px;
+}
+
+.months div .counter {
+  background: grey;
+  color: white;
+  border-radius: 1vw;
+  padding: 0.3vw 0.7vw;
+  margin-left: 47vw;
 }
