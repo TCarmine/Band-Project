@@ -127,7 +127,6 @@ section > img:nth-of-type(3) {
 .card-img {
   width: 15vw;
   height: 15vw;
-  background: grey;
   border-radius: 50%;
 }
 
@@ -143,6 +142,7 @@ section > img:nth-of-type(3) {
   text-transform: uppercase;
   text-align: center;
   font-weight: lighter;
+  padding-top: 2vw;
 }
 
 .text {
@@ -172,4 +172,9 @@ section > img:nth-of-type(3) {
 
 .active {
   opacity: 1;
+}
+
+.dark {
+  background: #1e1e1e;
+  color: #b2bfbd;
 }

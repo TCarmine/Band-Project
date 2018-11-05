@@ -117,7 +117,6 @@ section>img {
 .card-img {
   width: 15vw;
   height: 15vw;
-  background: grey;
   border-radius: 50%;
 
   &:hover{
@@ -133,6 +132,7 @@ section>img {
   text-transform: uppercase;
   text-align: center;
   font-weight: lighter;
+  padding-top: 2vw;
 }
 
 .text {
@@ -162,4 +162,9 @@ section>img {
 
 .active {
   opacity: 1;
+}
+
+.dark {
+  background: rgb(30, 30, 30);
+  color: rgb(178, 191, 189);
 }
