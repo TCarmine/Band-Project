@@ -1,3 +1,4 @@
+
 nav {
   background: rgba(30, 30, 30, 0.9);
   color: rgb(178, 191, 189);
@@ -45,32 +46,32 @@ nav {
 
 .dropdown {
   position: fixed;
-  top: 5vw;
-  right: 5vw;
+  top: 5.7vw;
+  right: 4.4vw;
   background: rgb(237, 255, 252);
   color: rgb(30, 30, 30);
 
   li {
-    color: rgb(30, 30, 30);
     text-align: left;
-    margin-left: 1vw;
+    width: 100%;
+    padding: 1vw;
 
     &:hover {
-      background: red;
-      width: 100%;
+      background: lighten(rgb(30, 30, 30), 30%);
     }
   }
 }
 
 section {
-  height: 80vw;
+  height: 60vw;
 }
 
-img {
+section>img {
   width: 100vw;
   position: absolute;
   top: 0;
   z-index: -1;
+  overflow-x: hidden;
 
   &:nth-of-type(1) {
     left: 0;
@@ -88,7 +89,7 @@ img {
 
 .forward, .back {
   position: absolute;
-  top: 50%;
+  top: 30vw;
   font-size: 3vw;
   color: white;
 }
@@ -99,4 +100,66 @@ img {
 
 .back {
   left: 10%;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2vw;
+  align-items: center;
+}
+
+.card-img {
+  width: 15vw;
+  height: 15vw;
+  background: grey;
+  border-radius: 50%;
+
+  &:hover{
+    box-shadow: 0 0 13px 10px rgba(120, 120, 120, 0.3);
+    cursor: pointer;
+    transition: border 1s linear;
+  }
+}
+
+.headline {
+  letter-spacing: 0.5vw;
+  font-size: 2vw;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.text {
+  font-size: 1vw;
+  color: rgb(120, 120, 120);
+  margin: 2vw 5vw;
+  text-align: center;
+  line-height: 2vw;
+}
+
+.card-text {
+  font-size: 1vw;
+  color: rgb(120, 120, 120);
+  margin: 2vw 5vw;
+  text-align: center;
+  line-height: 2vw;
+  opacity: 0;
+}
+
+.subline {
+  font-size: 1.5vw;
+  font-style: oblique;
+  margin-bottom: 1vw;
+  color: rgb(120, 120, 120);
+  text-align: center;
+}
+
+.active {
+  opacity: 1;
 }
